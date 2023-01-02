@@ -1,0 +1,263 @@
+{
+	"name": "Notebook 1",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "venkatsrapache",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "2a10631e-d841-4ad3-b628-b739caa1ba91"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"e4abce85-1318-4bc0-a6a9-dc091bd9b9f4": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "YEAR",
+										"1": "MONTH",
+										"2": "SUPPLIER",
+										"3": "ITEM CODE",
+										"4": "ITEM DESCRIPTION",
+										"5": "ITEM TYPE",
+										"6": "RETAIL SALES",
+										"7": "RETAIL TRANSFERS",
+										"8": "WAREHOUSE SALES"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "REPUBLIC NATIONAL DISTRIBUTING CO",
+										"3": "100009",
+										"4": "BOOTLEG RED - 750ML",
+										"5": "WINE",
+										"6": "0.00",
+										"7": "0.00",
+										"8": "2.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "PWSWN INC",
+										"3": "100024",
+										"4": "MOMENT DE PLAISIR - 750ML",
+										"5": "WINE",
+										"6": "0.00",
+										"7": "1.00",
+										"8": "4.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "RELIABLE CHURCHILL LLLP",
+										"3": "1001",
+										"4": "S SMITH ORGANIC PEAR CIDER - 18.7OZ",
+										"5": "BEER",
+										"6": "0.00",
+										"7": "0.00",
+										"8": "1.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "LANTERNA DISTRIBUTORS INC",
+										"3": "100145",
+										"4": "SCHLINK HAUS KABINETT - 750ML",
+										"5": "WINE",
+										"6": "0.00",
+										"7": "0.00",
+										"8": "1.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "DIONYSOS IMPORTS INC",
+										"3": "100293",
+										"4": "SANTORINI GAVALA WHITE - 750ML",
+										"5": "WINE",
+										"6": "0.82",
+										"7": "0.00",
+										"8": "0.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "KYSELA PERE ET FILS LTD",
+										"3": "100641",
+										"4": "CORTENOVA VENETO P/GRIG - 750ML",
+										"5": "WINE",
+										"6": "2.76",
+										"7": "0.00",
+										"8": "6.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "SANTA MARGHERITA USA INC",
+										"3": "100749",
+										"4": "SANTA MARGHERITA P/GRIG ALTO - 375ML",
+										"5": "WINE",
+										"6": "0.08",
+										"7": "1.00",
+										"8": "1.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "BROWN-FORMAN BEVERAGES WORLDWIDE",
+										"3": "1008",
+										"4": "JACK DANIELS COUNTRY COCKTAIL SOUTHERN PEACH - 10.OZ-NR",
+										"5": "BEER",
+										"6": "0.00",
+										"7": "0.00",
+										"8": "2.00"
+									},
+									{
+										"0": "2020",
+										"1": "1",
+										"2": "JIM BEAM BRANDS CO",
+										"3": "10103",
+										"4": "KNOB CREEK BOURBON 9YR - 100P - 375ML",
+										"5": "LIQUOR",
+										"6": "6.41",
+										"7": "4.00",
+										"8": "0.00"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "_c0",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "_c1",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "_c2",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "_c3",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "_c4",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "_c5",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "_c6",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "_c7",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "_c8",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "count",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/6e0e4042-fa41-4572-8bf8-7025758cd685/resourceGroups/venkatsrazureresource24/providers/Microsoft.Synapse/workspaces/venkatsrazure24/bigDataPools/venkatsrapache",
+				"name": "venkatsrapache",
+				"type": "Spark",
+				"endpoint": "https://venkatsrazure24.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/venkatsrapache",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.2",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "python"
+					},
+					"collapsed": false
+				},
+				"source": [
+					"%%pyspark\r\n",
+					"df = spark.read.load('abfss://storageblob1@venkatsrazure24storage.dfs.core.windows.net/root/Warehouse_and_Retail_Sales.csv', format='csv'\r\n",
+					"## If header exists uncomment line below\r\n",
+					"##, header=True\r\n",
+					")\r\n",
+					"display(df.limit(10))"
+				],
+				"execution_count": 1
+			}
+		]
+	}
+}

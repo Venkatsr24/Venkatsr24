@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": " CREATE TABLE [UserTopProductPurchases]\n (\n     [UserId] [int]  NOT NULL,\n     [ProductId] [int]  NOT NULL,\n     [ItemsPurchasedLast12Months] [int]  NULL,\n     [IsTopProduct] [bit]  NOT NULL,\n     [IsPreferredProduct] [bit]  NOT NULL\n )\n WITH\n (\n     DISTRIBUTION = HASH ( [UserId] ),\n     CLUSTERED COLUMNSTORE INDEX\n )\n\n select * from [UserTopProductPurchases]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Venkatsrazurededicatedpool",
+				"poolName": "Venkatsrazurededicatedpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
